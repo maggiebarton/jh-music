@@ -8,6 +8,7 @@ const sections = document.querySelectorAll("main section[id]");
 function setMenu(open) {
   mobileMenu.classList.toggle("open", open);
   menuToggle.classList.toggle("menu-open", open);
+  header.classList.toggle("menu-active", open);
   menuToggle.setAttribute("aria-expanded", String(open));
   menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   mobileMenu.setAttribute("aria-hidden", String(!open));

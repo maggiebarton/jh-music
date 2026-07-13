@@ -28,7 +28,16 @@ body {
 #site-header.scrolled {
   background: rgba(7, 6, 8, 0.82);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
+}
+
+#site-header.menu-active {
+  background: transparent;
+  border-bottom-color: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  transition: none;
 }
 
 .nav-link {
@@ -228,20 +237,42 @@ body {
   text-transform: uppercase;
 }
 
-.social-link { color: rgba(255, 255, 255, 0.55); transition: color 200ms ease; }
-.social-link:hover { color: #a78bfa; }
+.social-icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 1.05rem;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.social-icon:hover {
+  border-color: #8b5cf6;
+  background: #8b5cf6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.social-icon:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 3px;
+}
 
 .mobile-menu {
   visibility: hidden;
   position: fixed;
   inset: 0;
-  background: rgba(7, 6, 8, 0.98);
+  background: #070608;
   opacity: 0;
-  transform: translateY(-1rem);
-  transition: opacity 250ms ease, transform 250ms ease, visibility 250ms;
+  transition: none;
 }
 
-.mobile-menu.open { visibility: visible; opacity: 1; transform: translateY(0); }
+.mobile-menu.open { visibility: visible; opacity: 1; }
+.mobile-menu > div { opacity: 0; transform: translateY(-0.75rem); transition: opacity 220ms ease, transform 220ms ease; }
+.mobile-menu.open > div { opacity: 1; transform: translateY(0); }
 .mobile-nav-link { color: rgba(255, 255, 255, 0.8); transition: color 180ms ease; }
 .mobile-nav-link:hover { color: #a78bfa; }
 
