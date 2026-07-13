@@ -1,0 +1,227 @@
+:root { color-scheme: dark; }
+
+html { background: #070608; scroll-padding-top: 5rem; }
+body { margin: 0; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+
+.epk-skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 100;
+  border-radius: 999px;
+  background: #8b5cf6;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  transition: top 180ms ease;
+}
+
+.epk-skip-link:focus { top: 1rem; }
+
+.epk-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 50;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.epk-nav-link {
+  color: rgba(255,255,255,.58);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.epk-nav-link:hover { color: white; }
+
+.epk-contact-button,
+.epk-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  border-radius: 999px;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.epk-contact-button { background: #8b5cf6; padding: .8rem 1.15rem; }
+.epk-contact-button:hover { background: #a78bfa; transform: translateY(-2px); }
+.epk-outline-button { border: 1px solid rgba(255,255,255,.25); padding: 1rem 1.35rem; backdrop-filter: blur(8px); }
+.epk-outline-button:hover { background: rgba(255,255,255,.1); transform: translateY(-2px); }
+
+.epk-hero { position: relative; min-height: 46rem; overflow: hidden; }
+.epk-hero-image { position: absolute; inset: 0; }
+.epk-hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: 58% 38%; }
+.epk-hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7,6,8,.95) 0%, rgba(7,6,8,.76) 36%, rgba(7,6,8,.15) 72%),
+    linear-gradient(0deg, #070608 0%, transparent 40%);
+}
+
+.epk-grain {
+  position: absolute;
+  inset: 0;
+  opacity: .11;
+  pointer-events: none;
+  background-image:
+    repeating-radial-gradient(circle at 25% 25%, transparent 0, rgba(255,255,255,.12) .6px, transparent 1px, transparent 4px),
+    repeating-radial-gradient(circle at 75% 65%, transparent 0, rgba(255,255,255,.08) .5px, transparent 1px, transparent 5px);
+  background-size: 9px 11px, 13px 15px;
+  mix-blend-mode: overlay;
+}
+
+.epk-kicker {
+  color: #8b5cf6;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.epk-hero h1 {
+  margin: 1.2rem 0 0;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(4.25rem, 10.5vw, 9.25rem);
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  font-weight: 500;
+  letter-spacing: .015em;
+  line-height: .83;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+
+.epk-section h2 em,
+.epk-section-heading h2 em,
+.epk-connect-panel h2 em { color: #a78bfa; font-weight: 400; }
+
+.epk-hero-summary { max-width: 32rem; color: rgba(255,255,255,.6); line-height: 1.75; }
+
+.epk-facts { border-block: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.025); }
+.fact { min-height: 9rem; padding: 2rem; border-bottom: 1px solid rgba(255,255,255,.1); }
+.fact span { display: block; color: rgba(255,255,255,.35); font-size: .62rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+.fact strong, .fact a { display: block; margin-top: .85rem; font-family: "Instrument Serif", serif; font-size: 1.5rem; font-weight: 400; }
+.fact a { transition: color 180ms ease; }
+.fact a:hover { color: #a78bfa; }
+
+.epk-section { padding: 8rem 0; }
+.epk-section h2,
+.epk-section-heading h2,
+.epk-connect-panel h2 {
+  margin: 1rem 0 0;
+  font-family: "Instrument Serif", serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: .02em;
+  line-height: .98;
+}
+
+.epk-copy { color: rgba(255,255,255,.48); font-size: 1rem; line-height: 1.85; }
+.epk-copy p { margin: 0 0 1.3rem; }
+.epk-copy .epk-lede { color: rgba(255,255,255,.83); font-family: "Instrument Serif", serif; font-size: clamp(1.8rem, 3vw, 2.55rem); line-height: 1.25; }
+
+.epk-highlights { padding: 0 0 8rem; }
+.highlight-card { min-height: 12rem; background: #0c0a0e; padding: 2rem; }
+.highlight-card span { color: #8b5cf6; font-size: .65rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+.highlight-card strong { display: block; margin-top: 3rem; font-family: "Instrument Serif", serif; font-size: 2rem; font-weight: 400; }
+
+.epk-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 3rem; }
+.epk-text-link { color: rgba(255,255,255,.5); font-size: .7rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; transition: color 180ms ease; }
+.epk-text-link:hover { color: #a78bfa; }
+
+.media-card { position: relative; display: block; min-height: 28rem; overflow: hidden; border-radius: 1rem; border: 1px solid rgba(255,255,255,.1); }
+.media-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 600ms ease; }
+.media-card:hover img { transform: scale(1.035); }
+.media-card-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(7,6,8,.95), transparent 70%); }
+.media-card-copy { position: absolute; inset: auto 0 0; display: grid; grid-template-columns: 1fr auto; align-items: end; padding: 1.5rem; }
+.media-card-copy small { grid-column: 1 / -1; margin-bottom: .4rem; color: #a78bfa; font-size: .62rem; font-style: normal; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+.media-card-copy strong { font-family: "Instrument Serif", serif; font-size: 1.7rem; font-weight: 400; }
+.media-card-copy i { color: rgba(255,255,255,.5); font-size: .65rem; font-style: normal; letter-spacing: .13em; text-transform: uppercase; }
+
+.epk-photos-section { border-block: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.018); }
+.epk-heading-note { max-width: 20rem; color: rgba(255,255,255,.4); font-size: .85rem; line-height: 1.7; }
+.photo-grid { display: grid; gap: 1.25rem; }
+.press-photo { position: relative; display: block; min-height: 32rem; overflow: hidden; border-radius: 1rem; }
+.press-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 600ms ease; }
+.press-photo:hover img { transform: scale(1.025); }
+.press-photo > span { position: absolute; inset: auto 0 0; display: flex; justify-content: space-between; gap: 1rem; background: linear-gradient(0deg, rgba(7,6,8,.9), transparent); padding: 3rem 1.25rem 1.25rem; font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.press-photo > span i { color: rgba(255,255,255,.45); font-style: normal; }
+
+.epk-connect-section { padding: 8rem 0; }
+.epk-connect-panel { overflow: hidden; border: 1px solid rgba(139,92,246,.25); border-radius: 1rem; background: rgba(46,23,61,.45); padding: clamp(1.5rem, 5vw, 4rem); }
+.epk-social-grid { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 4rem; }
+.epk-social-grid a { display: grid; width: 3.5rem; height: 3.5rem; place-items: center; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; color: rgba(255,255,255,.7); font-size: 1.25rem; transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.epk-social-grid a i { font-style: normal; }
+.epk-social-grid a:hover { border-color: #8b5cf6; background: #8b5cf6; color: white; transform: translateY(-2px); }
+.epk-social-grid a:focus-visible { outline: 2px solid #a78bfa; outline-offset: 3px; }
+.epk-contact-row { display: grid; gap: 1rem; margin-top: 3rem; }
+.epk-contact-row a { border-radius: .75rem; background: rgba(255,255,255,.05); padding: 1.25rem; transition: background 180ms ease; }
+.epk-contact-row a:hover { background: rgba(255,255,255,.09); }
+.epk-contact-row small { display: block; color: rgba(255,255,255,.36); font-size: .6rem; letter-spacing: .18em; text-transform: uppercase; }
+.epk-contact-row strong { display: block; margin-top: .6rem; overflow-wrap: anywhere; font-size: 1rem; font-weight: 500; }
+
+.epk-pdf-download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-radius: .75rem;
+  background: #8b5cf6;
+  padding: 1.25rem;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.epk-pdf-download:hover { background: #a78bfa; transform: translateY(-2px); }
+.epk-pdf-download small { display: block; font-size: .6rem; letter-spacing: .18em; text-transform: uppercase; opacity: .72; }
+.epk-pdf-download strong { display: block; margin-top: .45rem; font-size: 1rem; font-weight: 600; }
+.epk-pdf-download i { font-size: .7rem; font-style: normal; font-weight: 600; letter-spacing: .14em; white-space: nowrap; }
+
+.epk-footer { border-top: 1px solid rgba(255,255,255,.1); padding: 2.5rem 0; }
+.epk-footer p { margin: .75rem 0 0; color: rgba(255,255,255,.28); font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; }
+.epk-footer a { color: rgba(255,255,255,.42); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; transition: color 180ms ease; }
+.epk-footer a:hover { color: #a78bfa; }
+
+@media (min-width: 640px) {
+  .fact { border-right: 1px solid rgba(255,255,255,.1); }
+  .epk-contact-row { grid-template-columns: repeat(2, 1fr); }
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  .press-photo--wide { grid-column: span 1; }
+}
+
+@media (min-width: 768px) {
+  .media-card--large { grid-column: span 1; }
+  .photo-grid { grid-template-columns: .8fr 1.4fr .8fr; }
+}
+
+@media (min-width: 1024px) {
+  .fact { border-bottom: 0; }
+  .epk-hero h1 { white-space: nowrap; }
+  .epk-name-break { display: none; }
+  .epk-hero h1 span { margin-left: .14em; }
+}
+
+@media (max-width: 767px) {
+  .epk-hero-image img { object-position: 56% 35%; }
+  .epk-hero-shade { background: linear-gradient(0deg, #070608 0%, rgba(7,6,8,.5) 60%, rgba(7,6,8,.25) 100%); }
+  .epk-section { padding: 6rem 0; }
+  .epk-highlights { padding-bottom: 6rem; }
+  .epk-section-heading { display: block; }
+  .epk-section-heading .epk-text-link,
+  .epk-section-heading .epk-heading-note { display: block; margin-top: 1.5rem; }
+  .epk-connect-section { padding: 6rem 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

@@ -1,12 +1,13 @@
-import { cp, mkdir, rm } from "node:fs/promises";
+import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import sharp from "sharp";
 
 const root = process.cwd();
-const destination = resolve(root, "public", "site");
+const destination = resolve(root, "docs");
 
 await rm(destination, { recursive: true, force: true });
 await mkdir(destination, { recursive: true });
+await writeFile(resolve(destination, ".nojekyll"), "");
 
 for (const file of [
   "index.html",
@@ -14,6 +15,7 @@ for (const file of [
   "epk.css",
   "main.js",
   "favicon.ico",
+  "CNAME",
   "tailwind.generated.css",
 ]) {
   await cp(resolve(root, file), resolve(destination, file));

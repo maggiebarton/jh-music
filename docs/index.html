@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The official website of Wisconsin Americana and folk singer-songwriter Joshua T. Hester."
+    />
+    <title>Joshua T. Hester — Americana Singer-Songwriter</title>
+    <meta name="theme-color" content="#070608" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Oswald:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="tailwind.generated.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-ink font-sans text-parchment antialiased selection:bg-violet selection:text-white">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+      <nav
+        class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12"
+        aria-label="Main navigation"
+      >
+        <a href="./" class="relative z-50 flex items-center" aria-label="Joshua T. Hester — home">
+          <img
+            src="images/jh-logo-svg.svg"
+            alt="Joshua T. Hester"
+            class="h-10 w-auto brightness-0 invert sm:h-12"
+          />
+        </a>
+
+        <button
+          id="menu-toggle"
+          class="relative z-50 grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-black/20 text-white backdrop-blur-md md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+
+        <div class="hidden items-center gap-8 md:flex">
+          <a class="nav-link" href="#videos">Videos</a>
+          <a class="nav-link" href="#shows">Shows</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="epk-button" href="epk/">EPK <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+          <div class="flex min-h-full flex-col justify-center px-8 py-24">
+            <p class="mb-8 text-xs font-semibold uppercase tracking-[0.3em] text-violet">Navigate</p>
+            <div class="flex flex-col gap-4 font-display text-5xl">
+              <a class="mobile-nav-link" href="#videos">Videos</a>
+              <a class="mobile-nav-link" href="#shows">Shows</a>
+              <a class="mobile-nav-link" href="#about">About</a>
+              <a class="mobile-nav-link" href="#contact">Contact</a>
+              <a class="mobile-nav-link text-violet" href="epk/">EPK ↗</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="hero-section relative flex min-h-screen items-end overflow-hidden">
+        <img
+          src="images/jh-4.jpg"
+          alt="Joshua T. Hester seated with a resonator guitar"
+          class="absolute inset-0 h-full w-full object-cover object-[56%_34%]"
+        />
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="grain absolute inset-0 opacity-20" aria-hidden="true"></div>
+
+        <div class="relative mx-auto w-full max-w-7xl px-5 pb-14 pt-32 sm:px-8 sm:pb-20 lg:px-12 lg:pb-24">
+          <p class="reveal mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-violet sm:text-sm">
+            Americana · Folk · Roots
+          </p>
+          <h1 class="artist-name reveal w-full font-artist text-[clamp(4.25rem,10.5vw,9.25rem)] font-medium uppercase leading-[0.83] tracking-normal lg:whitespace-nowrap">
+            Joshua T.<br class="lg:hidden" /><span class="lg:ml-[0.14em]">Hester</span>
+          </h1>
+          <div class="reveal mt-9 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+            <a href="#videos" class="primary-button">Listen &amp; watch <span aria-hidden="true">↓</span></a>
+            <p class="max-w-sm text-sm leading-relaxed text-white/60 sm:border-l sm:border-white/20 sm:pl-6">
+              Wisconsin-made songs rooted in storytelling, lived experience, and American roots music.
+            </p>
+          </div>
+        </div>
+        <div class="absolute bottom-0 right-6 hidden origin-bottom-right -rotate-90 text-[10px] uppercase tracking-[0.3em] text-white/30 lg:block">
+          Scroll to explore
+        </div>
+      </section>
+
+      <section id="videos" class="section-shell relative overflow-hidden">
+        <div class="section-glow -left-64 top-28" aria-hidden="true"></div>
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">01 / Videos</p>
+              <h2>Stories you can <span class="italic text-violet">hear.</span></h2>
+            </div>
+          </div>
+
+          <div class="reveal mt-14 grid gap-5 lg:grid-cols-[1.55fr_0.85fr]">
+            <article class="youtube-video youtube-video--featured">
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/cxJRvBB9Irc?rel=0"
+                  title="The End is Nigh by Joshua T. Hester"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-meta">
+                <div><span>Featured video</span><strong>The End is Nigh</strong></div>
+                <a href="https://youtu.be/cxJRvBB9Irc" target="_blank" rel="noreferrer">Watch on YouTube ↗</a>
+              </div>
+            </article>
+
+            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
+              <article class="youtube-video">
+                <div class="video-embed">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/OSkZ3FQ7hcI?rel=0"
+                    title="Andy's Song by Joshua T. Hester"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-meta video-meta--small">
+                  <div><span>Live video</span><strong>Andy's Song</strong></div>
+                  <a href="https://youtu.be/OSkZ3FQ7hcI" target="_blank" rel="noreferrer" aria-label="Watch Andy's Song on YouTube">↗</a>
+                </div>
+              </article>
+
+              <article class="youtube-video">
+                <div class="video-embed">
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/sC0MnJHd2hw?rel=0"
+                    title="Sick Day by Joshua T. Hester"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-meta video-meta--small">
+                  <div><span>Live video</span><strong>Sick Day</strong></div>
+                  <a href="https://youtu.be/sC0MnJHd2hw" target="_blank" rel="noreferrer" aria-label="Watch Sick Day on YouTube">↗</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="shows" class="section-shell border-y border-white/10 bg-white/[0.025]">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">02 / Shows</p>
+              <h2>Meet me <span class="italic text-violet">out there.</span></h2>
+            </div>
+          </div>
+
+          <div class="bandsintown-shell reveal mt-14">
+            <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+            <a
+              class="bit-widget-initializer"
+              data-artist-name="id_15656310"
+              data-app-id="e417d2ca6f9c3e8f4bb21487e2311e4f"
+              data-auto-style="false"
+              data-widget-width="100%"
+              data-background-color="#070608"
+              data-popup-background-color="#100D13"
+              data-separator-color="#2A252D"
+              data-text-color="#EEE9E1"
+              data-link-color="#8B5CF6"
+              data-link-text-color="#FFFFFF"
+              data-font="DM Sans"
+              data-language="en"
+              data-venue-capitalization="capitalize"
+              data-display-start-time="false"
+              data-display-local-dates="false"
+              data-display-past-dates="false"
+              data-display-lineup="false"
+              data-display-details="false"
+              data-date-format="MMM. DD YYYY"
+              data-date-orientation="vertical"
+              data-event-rsvp-only-show-icon="true"
+              data-follow-section-position="bottom"
+              data-follow-section-alignment="center"
+              data-play-my-city-position="hidden"
+              data-play-my-city-cta-size="medium"
+              data-bit-logo-position="hidden"
+              data-display-logo="false"
+              aria-label="Upcoming Joshua T. Hester shows"
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell relative overflow-hidden">
+        <div class="section-glow -right-64 bottom-10" aria-hidden="true"></div>
+        <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 lg:px-12">
+          <div class="reveal relative min-h-[32rem] overflow-hidden rounded-2xl sm:min-h-[44rem]">
+            <img src="images/jh-1.jpg" alt="Joshua T. Hester holding a resonator guitar" class="absolute inset-0 h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <p class="absolute bottom-6 left-6 text-xs uppercase tracking-[0.25em] text-white/55">Wisconsin · USA</p>
+          </div>
+
+          <div class="reveal flex flex-col justify-center">
+            <p class="eyebrow">03 / Media &amp; Bio</p>
+            <h2 class="font-display text-5xl leading-[0.96] sm:text-7xl">Tell the truth.<br /><span class="italic text-violet">Serve the song.</span></h2>
+            <p class="mt-8 text-lg leading-relaxed text-white/70">
+              Joshua T. Hester is a Wisconsin-based Americana and folk singer-songwriter whose music is rooted in storytelling, lived experience, and the traditions of American roots music.
+            </p>
+            <p class="mt-5 leading-relaxed text-white/45">
+              A road-tested multi-instrumentalist and former member of Listening Party, Hester blends folk, country, Americana, and roots influences into character-driven songs with a distinctly Midwestern perspective.
+            </p>
+            <div class="mt-9 flex flex-wrap gap-3">
+              <span class="tag">Americana</span><span class="tag">Folk</span><span class="tag">Country</span><span class="tag">Roots</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="epk" class="px-5 pb-24 sm:px-8 sm:pb-32 lg:px-12">
+        <div class="reveal mx-auto max-w-7xl overflow-hidden rounded-2xl border border-violet/25 bg-plum/40 p-7 sm:p-12 lg:p-16">
+          <div class="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
+            <div>
+              <p class="eyebrow">Electronic press kit</p>
+              <h2 class="max-w-3xl font-display text-5xl leading-none sm:text-7xl">Everything you need to <span class="italic text-violet">book the show.</span></h2>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="epk/" class="primary-button whitespace-nowrap">View EPK <span aria-hidden="true">↗</span></a>
+              <a href="output/pdf/Joshua-T-Hester-EPK.pdf" class="secondary-button whitespace-nowrap" download>Download PDF <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell relative overflow-hidden border-t border-white/10 bg-white/[0.02]">
+        <div class="section-glow -left-64 top-20" aria-hidden="true"></div>
+        <div class="relative mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 lg:px-12">
+          <div class="reveal flex flex-col justify-center">
+            <p class="eyebrow">04 / Contact</p>
+            <p class="mt-7 max-w-md text-lg leading-relaxed text-white/55">
+              Booking a venue, festival, listening room, or private event? Send a note with the details and Joshua will get back to you.
+            </p>
+            <a class="contact-email" href="mailto:joshuahestermusic@gmail.com">joshuahestermusic@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-status contact-status--success" data-fs-success role="status">
+              Thanks for reaching out. Your message is on its way to Joshua.
+            </div>
+            <div class="contact-status contact-status--error" data-fs-error role="alert">
+              Something went wrong. Please try again or email Joshua directly.
+            </div>
+
+            <form id="contact-form" action="https://formspree.io/f/xkodnpag" method="POST">
+              <input type="hidden" name="_subject" value="New inquiry from joshuahestermusic.com" />
+
+              <div class="contact-fields">
+                <div class="contact-field">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" type="text" name="name" autocomplete="name" required data-fs-field />
+                  <span class="contact-field-error" data-fs-error="name"></span>
+                </div>
+
+                <div class="contact-field">
+                  <label for="contact-email">Email</label>
+                  <input id="contact-email" type="email" name="email" autocomplete="email" required data-fs-field />
+                  <span class="contact-field-error" data-fs-error="email"></span>
+                </div>
+
+                <div class="contact-field contact-field--full">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" name="message" rows="7" required data-fs-field></textarea>
+                  <span class="contact-field-error" data-fs-error="message"></span>
+                </div>
+              </div>
+
+              <div class="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <p class="text-xs leading-relaxed text-white/35">Your details are only used to respond to this inquiry.</p>
+                <button class="contact-submit" type="submit" data-fs-submit-btn>
+                  <span>Send message</span><span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-5 py-10 sm:px-8 lg:px-12">
+      <div class="mx-auto flex max-w-7xl flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <img src="images/jh-logo-svg.svg" alt="Joshua T. Hester" class="h-12 w-auto brightness-0 invert opacity-90" />
+          <p class="mt-3 text-xs uppercase tracking-[0.2em] text-white/35">Americana · Folk · Roots</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3" aria-label="Social media">
+          <a class="social-icon" href="https://www.youtube.com/@joshuahestermusic" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on YouTube" title="YouTube">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/joshuahestermusic/" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on Instagram" title="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span>
+          </a>
+          <a class="social-icon" href="https://www.facebook.com/joshuathester/" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on Facebook" title="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+          </a>
+          <a class="social-icon" href="https://www.tiktok.com/@joshuahestermusic" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on TikTok" title="TikTok">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i><span class="sr-only">TikTok</span>
+          </a>
+        </div>
+      </div>
+      <div class="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-5 text-[11px] uppercase tracking-[0.18em] text-white/50 sm:flex-row sm:items-center sm:justify-between">
+        <span>© <span id="year"></span> Joshua T. Hester</span>
+        <span class="site-credit">
+          Like this site? Designed by
+          <a href="https://github.com/maggiebarton" target="_blank" rel="noreferrer">magsauce ↗</a>
+          <span aria-hidden="true">·</span>
+          <a href="mailto:maggiebarton2@gmail.com">Email</a>
+        </span>
+        <a href="#home" class="transition hover:text-white">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      window.formspree = window.formspree || function () {
+        (formspree.q = formspree.q || []).push(arguments);
+      };
+      formspree("initForm", { formElement: "#contact-form", formId: "xkodnpag" });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script src="main.js"></script>
+  </body>
+</html>

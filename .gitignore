@@ -1,7 +1,4 @@
 .DS_Store
 tmp/pdfs/rendered/
 node_modules/
-dist/
-public/site/
-.wrangler/
 .env*
