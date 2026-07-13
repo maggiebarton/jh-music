@@ -413,16 +413,6 @@ body {
 .contact-status--success { border-color: rgba(139, 92, 246, 0.45); background: rgba(139, 92, 246, 0.1); color: #ddd6fe; }
 .contact-status--error { border-color: rgba(248, 113, 113, 0.4); background: rgba(248, 113, 113, 0.08); color: #fecaca; }
 
-.contact-honeypot {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  clip-path: inset(50%) !important;
-  white-space: nowrap !important;
-}
-
 .social-icon {
   display: grid;
   width: 2.75rem;
