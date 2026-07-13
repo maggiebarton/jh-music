@@ -11,6 +11,13 @@ body {
   overflow-x: hidden;
 }
 
+.text-arrow {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant-emoji: text;
+}
+
 .skip-link {
   position: fixed;
   left: 1rem;
@@ -115,7 +122,7 @@ body {
   mix-blend-mode: overlay;
 }
 
-.section-shell { padding: 8rem 0; }
+.section-shell { padding: 6rem 0; }
 
 .section-heading {
   display: flex;
@@ -442,11 +449,14 @@ body {
 }
 
 .site-credit a {
-  color: rgba(255, 255, 255, 0.48);
-  transition: color 180ms ease;
+  color: #a78bfa;
+  text-decoration: underline;
+  text-decoration-color: rgba(167, 139, 250, 0.45);
+  text-underline-offset: 0.22em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
 }
 
-.site-credit a:hover { color: #a78bfa; }
+.site-credit a:hover { color: #c4b5fd; text-decoration-color: currentColor; }
 .site-credit a:focus-visible { outline: 2px solid #a78bfa; outline-offset: 3px; }
 
 .mobile-menu {
@@ -491,6 +501,7 @@ body {
     align-items: center !important;
     justify-content: flex-end !important;
     gap: 0.5rem !important;
+    margin-top: 0.875rem !important;
   }
 
   .bandsintown-shell .bit-mobile-event-icons,
@@ -522,7 +533,7 @@ body {
   .contact-field--full { grid-column: auto; }
   .contact-submit { width: 100%; }
 
-  .section-shell { padding: 6rem 0; }
+  .section-shell { padding: 4.25rem 0; }
   .section-heading { display: block; }
   .section-intro { margin-top: 1.5rem; }
 }
