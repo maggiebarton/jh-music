@@ -17,8 +17,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Oswald:wght@500;600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -33,6 +37,7 @@
             },
             fontFamily: {
               display: ["Instrument Serif", "serif"],
+              artist: ["Oswald", "sans-serif"],
               sans: ["DM Sans", "sans-serif"],
             },
           },
@@ -68,9 +73,9 @@
         <div class="epk-grain" aria-hidden="true"></div>
 
         <div class="relative z-10 mx-auto flex min-h-[46rem] max-w-7xl items-end px-5 pb-12 pt-32 sm:px-8 sm:pb-16 lg:min-h-screen lg:px-12 lg:pb-20">
-          <div class="max-w-4xl">
+          <div class="w-full">
             <p class="epk-kicker">Electronic press kit · 2026</p>
-            <h1>Joshua T.<br /><em>Hester</em></h1>
+            <h1>Joshua T.<br class="epk-name-break" /><span>Hester</span></h1>
             <div class="mt-8 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
               <p class="epk-hero-summary">Wisconsin-based Americana and folk singer-songwriter rooted in honest storytelling and American roots music.</p>
               <a class="epk-outline-button" href="mailto:joshuahestermusic@gmail.com?subject=Booking%20Inquiry%20for%20Joshua%20T.%20Hester">Booking inquiry <span aria-hidden="true">↗</span></a>
@@ -176,11 +181,19 @@
           <div class="epk-connect-panel">
             <p class="epk-kicker">04 / Links &amp; contact</p>
             <h2>Let’s make something<br /><em>worth remembering.</em></h2>
-            <div class="epk-social-grid">
-              <a href="https://www.youtube.com/@joshuahestermusic" target="_blank" rel="noreferrer"><span>YouTube</span><i>↗</i></a>
-              <a href="https://www.instagram.com/joshuahestermusic/" target="_blank" rel="noreferrer"><span>Instagram</span><i>↗</i></a>
-              <a href="https://www.facebook.com/joshuathester/" target="_blank" rel="noreferrer"><span>Facebook</span><i>↗</i></a>
-              <a href="https://www.tiktok.com/@joshuahestermusic" target="_blank" rel="noreferrer"><span>TikTok</span><i>↗</i></a>
+            <div class="epk-social-grid" aria-label="Social media">
+              <a href="https://www.youtube.com/@joshuahestermusic" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on YouTube" title="YouTube">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span>
+              </a>
+              <a href="https://www.instagram.com/joshuahestermusic/" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on Instagram" title="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span>
+              </a>
+              <a href="https://www.facebook.com/joshuathester/" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on Facebook" title="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+              </a>
+              <a href="https://www.tiktok.com/@joshuahestermusic" target="_blank" rel="noreferrer" aria-label="Joshua T. Hester on TikTok" title="TikTok">
+                <i class="fa-brands fa-tiktok" aria-hidden="true"></i><span class="sr-only">TikTok</span>
+              </a>
             </div>
             <div class="epk-contact-row">
               <a href="mailto:joshuahestermusic@gmail.com"><small>Booking &amp; inquiries</small><strong>joshuahestermusic@gmail.com</strong></a>

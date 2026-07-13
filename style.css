@@ -100,6 +100,12 @@ body {
     linear-gradient(0deg, #070608 0%, transparent 48%);
 }
 
+.artist-name {
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
 .grain {
   pointer-events: none;
   background-image:
@@ -149,6 +155,59 @@ body {
   background: rgba(124, 58, 237, 0.09);
   filter: blur(80px);
   pointer-events: none;
+}
+
+.bandsintown-shell {
+  min-height: 12rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: #070608;
+  padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+.bandsintown-shell .bit-widget {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.bandsintown-shell .bit-button,
+.bandsintown-shell [class*="bit-rsvp"],
+.bandsintown-shell [class*="bit-offers"] {
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.bandsintown-shell a[aria-label="RSVP"] {
+  display: inline-flex !important;
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-color: #8b5cf6 !important;
+  border-radius: 999px !important;
+  background-color: #8b5cf6 !important;
+  color: #ffffff !important;
+}
+
+.bandsintown-shell a[aria-label="RSVP"]:hover {
+  border-color: #a78bfa !important;
+  background-color: #a78bfa !important;
+}
+
+.bandsintown-shell a[aria-label="RSVP"] svg {
+  margin: 0 !important;
+  color: #ffffff !important;
+}
+
+.bandsintown-shell a[aria-label="RSVP"] svg path {
+  fill: #ffffff !important;
+}
+
+.bandsintown-shell a:focus-visible {
+  outline: 2px solid #a78bfa !important;
+  outline-offset: 3px !important;
 }
 
 .youtube-video {

@@ -93,6 +93,46 @@ def draw_link(c, label, url, x, y, font="Arial-Bold", size=8, color=PARCHMENT, a
     return width
 
 
+def draw_social_icon(c, brand, url, x, y, size=34):
+    """Draw a compact vector social mark with a full clickable target."""
+    cx = x + size / 2
+    cy = y + size / 2
+    c.setFillColor(INK)
+    c.setStrokeColor(HexColor("#4A345F"))
+    c.setLineWidth(1)
+    c.circle(cx, cy, size / 2, stroke=1, fill=1)
+
+    c.setStrokeColor(PARCHMENT)
+    c.setFillColor(PARCHMENT)
+    c.setLineCap(1)
+    c.setLineJoin(1)
+
+    if brand == "youtube":
+        c.roundRect(cx - 9.5, cy - 6.5, 19, 13, 3.2, stroke=0, fill=1)
+        c.setFillColor(INK)
+        path = c.beginPath()
+        path.moveTo(cx - 2, cy - 4)
+        path.lineTo(cx + 5, cy)
+        path.lineTo(cx - 2, cy + 4)
+        path.close()
+        c.drawPath(path, stroke=0, fill=1)
+    elif brand == "instagram":
+        c.setLineWidth(1.7)
+        c.roundRect(cx - 9, cy - 9, 18, 18, 4.2, stroke=1, fill=0)
+        c.circle(cx, cy, 4.2, stroke=1, fill=0)
+        c.circle(cx + 5.4, cy + 5.4, 1.2, stroke=0, fill=1)
+    elif brand == "facebook":
+        c.setFont("Arial-Bold", 20)
+        c.drawCentredString(cx, cy - 7, "f")
+    elif brand == "tiktok":
+        c.setLineWidth(2.2)
+        c.line(cx + 1.5, cy - 5, cx + 1.5, cy + 7)
+        c.line(cx + 1.5, cy + 7, cx + 7, cy + 4)
+        c.circle(cx - 2.5, cy - 5.2, 3.8, stroke=0, fill=1)
+
+    c.linkURL(url, (x, y, x + size, y + size), relative=0, thickness=0)
+
+
 def build_pdf():
     register_fonts()
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
@@ -224,14 +264,13 @@ def build_pdf():
 
     draw_label(c, "Follow", right_x, 180)
     social_links = [
-        ("YouTube", "https://www.youtube.com/@joshuahestermusic"),
-        ("Instagram", "https://www.instagram.com/joshuahestermusic/"),
-        ("Facebook", "https://www.facebook.com/joshuathester/"),
-        ("TikTok", "https://www.tiktok.com/@joshuahestermusic"),
+        ("youtube", "https://www.youtube.com/@joshuahestermusic"),
+        ("instagram", "https://www.instagram.com/joshuahestermusic/"),
+        ("facebook", "https://www.facebook.com/joshuathester/"),
+        ("tiktok", "https://www.tiktok.com/@joshuahestermusic"),
     ]
-    positions = [(right_x, 154), (right_x + 95, 154), (right_x, 128), (right_x + 95, 128)]
-    for (label, url), (x, y) in zip(social_links, positions):
-        draw_link(c, label, url, x, y, size=7.5, color=MUTED)
+    for index, (brand, url) in enumerate(social_links):
+        draw_social_icon(c, brand, url, right_x + index * 49, 125)
 
     draw_label(c, "Official Website", right_x, 95)
     draw_link(c, "joshuahestermusic.com", WEBSITE, right_x, 74, size=8.5, color=VIOLET_LIGHT, arrow=False)
