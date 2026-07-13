@@ -129,7 +129,11 @@ body {
   font-family: "Instrument Serif", serif;
   font-size: clamp(3.3rem, 7vw, 6.5rem);
   line-height: 0.9;
-  letter-spacing: -0.035em;
+}
+
+.section-shell h2,
+#epk h2 {
+  letter-spacing: 0.01em;
 }
 
 .eyebrow {
