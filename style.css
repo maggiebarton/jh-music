@@ -4,7 +4,7 @@
 
 html {
   background: #070608;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 3.5rem;
 }
 
 body {
@@ -353,6 +353,40 @@ body {
 @media (max-width: 767px) {
   .hero-overlay {
     background: linear-gradient(0deg, #070608 0%, rgba(7, 6, 8, 0.45) 55%, rgba(7, 6, 8, 0.25) 100%);
+  }
+
+  .bandsintown-shell .bit-event-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 0.5rem !important;
+  }
+
+  .bandsintown-shell .bit-mobile-event-icons,
+  .bandsintown-shell .bit-offers-inner-wrapper,
+  .bandsintown-shell .bit-offers-container {
+    display: flex !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+
+  .bandsintown-shell .bit-mobile-event-icons {
+    order: 1 !important;
+  }
+
+  .bandsintown-shell .bit-offers-inner-wrapper {
+    order: 2 !important;
+  }
+
+  .bandsintown-shell .bit-offers {
+    width: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
   }
 
   .section-shell { padding: 6rem 0; }
